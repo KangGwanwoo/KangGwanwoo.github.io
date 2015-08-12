@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's Jekyll?
+title: GitHub Page와 Jekyll을 가지고 블로그 포스팅하기.
 ---
 
 [Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/jekyll/jekyll/blob/master/README.markdown):

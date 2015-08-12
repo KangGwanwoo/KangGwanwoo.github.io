@@ -5,9 +5,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               강관우's
+tagline:             The Blog of Kang Gwan-Woo
+url:                 https://www.facebook.com/profile.php?id=100005582915822
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +20,17 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Kang Gwan-Woo
+  url:               https://www.facebook.com/profile.php?id=100005582915822
+  email:             goodmorning0726@gmail.com
 
 # Custom vars
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+
+#Header navigation bar
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>강관우's</title>
+ <link href="https://www.facebook.com/profile.php?id=100005582915822/atom.xml" rel="self"/>
+ <link href="https://www.facebook.com/profile.php?id=100005582915822/"/>
+ <updated>2015-08-12T11:39:20+09:00</updated>
+ <id>https://www.facebook.com/profile.php?id=100005582915822</id>
+ <author>
+   <name>Kang Gwan-Woo</name>
+   <email>goodmorning0726@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>GitHub Page와 Jekyll을 가지고 블로그 포스팅하기.</title>
+   <link href="https://www.facebook.com/profile.php?id=100005582915822/2013/12/31/whats-jekyll/"/>
+   <updated>2013-12-31T00:00:00+09:00</updated>
+   <id>https://www.facebook.com/profile.php?id=100005582915822/2013/12/31/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
