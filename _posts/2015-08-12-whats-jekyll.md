@@ -51,22 +51,20 @@ cd 폴더명
 jekyll serve --watch
 {% endhighlight %}
 
+<br>
 ![placeholder](/public/first-post-localhost.png "serve page with jekyll")
+<br>
 
 ##github에 호스팅하기
-
 [깃허브](www.github.com)에 계정을 생성하고 새로운 레포지토리를 만듭니다.<br>
 저장소 이름은 사용자명.github.io 으로 만들어야 github에서 호스팅할 저장소라는 것을 인지하여 컴파일 후 호스팅해줍니다. 때문에 **반드시** 해당 형식에 맞춰서 저장소를 만들어야합니다. 저 같은 경우는 아래와 같이 저장소를 만들었습니다.
 
-
+<br>
 ![placeholder](/public/first-post-repo.png "create repository with github")
-
+<br>
 
 중간에 하기에는 이상한 말이지만 제가 포스팅하는 방식대로 블로그를 운영하기 위해서 Git과 마크다운 문법에 대한 이해가 선행학습 되어야 합니다.
-깃에 대한 학습은 [완전초보를 위한 깃허브](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/) [누구나 쉽게 이해할 수 있는 Git 입문](http://backlogtool.com/git-guide/kr/) 사이트를 참고하여 학습을 하도록 합시다 ! 마크다운은 문법을 익히기만 하면 되기 때문에 검색되는 아무 사이트에서 두시간 정도면 마스터할 수 있지 않을까 생각됩니다 ^^
-
-
-<br>
+깃에 대한 학습은 [완전초보를 위한 깃허브](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/) 와 [누구나 쉽게 이해할 수 있는 Git 입문](http://backlogtool.com/git-guide/kr/) 사이트를 참고하여 학습을 하도록 합시다 ! 마크다운은 문법을 익히기만 하면 되기 때문에 검색되는 아무 사이트에서 두시간 정도면 마스터할 수 있지 않을까 생각됩니다 ^^
 
 git repository를 생성했다면 저희가 아까 만든 폴더의 내용을 Push해야 합니다. 저는 [source tree](https://www.sourcetreeapp.com/)를 사용하지만 
 git을 모르는 입문자분들 위해서 커맨드 라인으로 진행합니다. 우선 git이 설치되어 있어야합니다. [Git설치](https://git-scm.com/book/ko/v1/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
@@ -80,6 +78,14 @@ git add .
 git commit -m "프로젝트 생성"
 git push origin master
 {% endhighlight %}
+
+
+커피 한 잔 마시고 오시면 {저장소이름}.github.com 혹은 {저장소이름}.github.io로 접속하면 로컬에 있던 파일이 올라가서 호스팅 되는 것을 확인 할 수있습니다. 
+
+
+
+**지금까지** Jekyll이라는 블로그를 만들 수 있는 프레임 워크를 활용해서 Github 위에 호스팅하는 방법을 알아보았습니다. Jekyll이 오픈소스인 만큼 여러가지 테마를 적용할 수
+도 있고 플러그인도 다양하게 되어있어 구글 애널라이즈나 댓글 혹은 소셜 공유같은 기능을 넣을 수도 있습니다. 나머지 기능들은 입맛에 맞게 찾아서 구현해보세요~~
 
 
 
