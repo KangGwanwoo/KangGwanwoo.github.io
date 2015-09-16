@@ -32,6 +32,8 @@ Facebook :
 
 **다음카카오 개발 인턴**
 
+[SW 마에스트로 6기 합격](http://kanggwanwoo.github.io/2015/09/16/sw-Maestro/)
+
 [2015 방콕 국제 학술 대회 논문 투고](http://icsmb2015.cs4smb.or.kr/CmsHome/MainDefault.aspx)
 
 ###2014

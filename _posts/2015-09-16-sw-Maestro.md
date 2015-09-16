@@ -80,12 +80,12 @@ title: SW mestro 6기 합격 수기
 ## 결과 ?
 
 <br>
-![placeholder](/public/sw-maestropng "interview test")
+![placeholder](/public/sw-maestro.png "interview test")
 <br>
 
 
 <br>
-![placeholder](/public/daumkakaopng "interview test")
+![placeholder](/public/daumkakao.png "interview test")
 <br>
 
 
