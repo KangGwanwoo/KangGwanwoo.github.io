@@ -33,3 +33,6 @@ github:
 pages_list:       
   About: '/about'
   Besides: '/archive'
+
+gems:
+  - jekyll-sitemap
