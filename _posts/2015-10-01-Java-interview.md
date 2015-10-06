@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 핵심 정
+title: Java 핵심 정리
 ---
 
 
