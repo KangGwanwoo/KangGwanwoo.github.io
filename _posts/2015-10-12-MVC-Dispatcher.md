@@ -5,6 +5,7 @@ title: MVC와 DispatcherServlet
 
 DispatcherServlet 이란 ?
 ----------------------------------
+---
 
 해당 어플리케이션으로 들어오는 요청을 모두 **핸들링하는 객체**
 web.xml와 **상호 작용**하는 객체
@@ -21,19 +22,21 @@ MVC란 Model View Controller의 약자로 어플리케이션을 세가지의 역
 아래의 그림 처럼 사용자가 Controller를 조작하면 Controller는 Modle을 통해서 데이터를 가져오고 그 정보를 바탕으로 시각적인 표현을 담당하는 View를 제어해서 사용자에게 전달하게 된다.
 
 <br>
-![placeholder](/public/mvc.png “mvc model")
+![mvc model](/public/MVC.png “mvc model")
 <br>
 
 [출처:생활코딩](https://opentutorials.org/course/697/3828)
 
+---
+
 DispatcherServlet에 대해 간단히 정의해보자면 우리가 각각 분리하여 만든 MVC각 파트를 조합하여 브라우저로 출력해주는 역할을 수행하는 클래스라고 할 수 있습니다.
 
 <br>
-![placeholder](/public/spring_dispatcher.png “spring_dispatcher model")
+![dispatcher](/public/spring_dispatcher.png “spring_dispatcher model")
 <br>
 
 < UML과 비슷하게 나타낸 DispatcherServlet 작동 방식 >
-
+---
 위의 작업 흐름을 풀어 설명하자면 다음과 같습니다.
 
 ①  클라이언트가 해당 어플리케이션에 접근하는 URL 요청을 DispatcherServlet이 가로챕니다. 이렇게 요청을 가로챌 수 있는 이유는 web.xml에 등록된 DispatcherServlet의 <url-pattern>이 ‘/‘와 같이 해당 어플리케이션의 모든 URL로 등록되있기 때문입니다. 만약 여러 개의 어플리케이션이 올라가거나 해서 특정 URL만 적용하고 싶다면 <url-pattern>의 내용을 바꿔주어 범위를 변경시켜주면 됩니다.
@@ -51,15 +54,19 @@ DispatcherServlet에 대해 간단히 정의해보자면 우리가 각각 분리
 
 
 
-### DispatcherServlet이 모든 URL 가로채서, 컨트롤러에 넘겨주어도 괜찮을까요 ?
+#### DispatcherServlet이 모든 URL 가로채서, 컨트롤러에 넘겨주어도 괜찮을까요 ?
 
 만약 이렇게 모든 요청을 가로채버린다면, 이미지나 HTML 파일을 불러오는 요청마저 전부 컨트롤러를 찾는 로직이 실행되기 때문에 제대로 **자원을 불러올 수 도 없는 상황**이 생깁니다.
 
 이 문제에 대해서 스프링은 편리한 해결방법을 고안해 냈습니다.
-
+~~~xml
 ** <resources mapping="/resources/-'*'" location="/resources/" /> **
+~~~
 
-<mvc:resources /> 태그를 활용하는 전략을 취해서 , 먼저 디스패처 서블릿을 통해 들어온 요청을 처리하는데 만약 디스패처 서블릿이 해당 요청에 대한 컨트롤러를 찾을 수 없다면 2차적으로 위의 설정된 경로를 검색해여 해당 자원을 찾아내게 합니다.
+~~~xml
+<mvc:resources /> 
+~~~
+태그를 활용하는 전략을 취해서 , 먼저 디스패처 서블릿을 통해 들어온 요청을 처리하는데 만약 디스패처 서블릿이 해당 요청에 대한 컨트롤러를 찾을 수 없다면 2차적으로 위의 설정된 경로를 검색해여 해당 자원을 찾아내게 합니다.
 
 이 방법을 통해서 비 어플리케이션 자원을 철저하게 분리하는게 가능해졌습니다.
 
