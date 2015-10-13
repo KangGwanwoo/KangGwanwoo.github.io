@@ -7,25 +7,27 @@ DispatcherServlet 이란 ?
 ----------------------------------
 ---
 
-해당 어플리케이션으로 들어오는 요청을 모두 **핸들링하는 객체**
+- 해당 어플리케이션으로 들어오는 요청을 모두 **핸들링하는 객체**
 
-web.xml와 **상호 작용**하는 객체
+- web.xml와 **상호 작용**하는 객체
 
 web.xml은 web application의 deployment descriptor로서 xml 형식의 파일인데,
 
-이 web.xml에서 가장 주요한 기능인 '<'servlet'>'' 매핑은 DispatcherServlet으로 넘어갔다.
+이 web.xml에서 가장 주요한 기능인 servlet 매핑을 DispatcherServlet으로 넘겨줄 수 있습니다.
 
-web.xml에서 DispatcherServlet의 '<'url-pattern'>'을 ‘/‘로 설정함과 동시에 이제 모든 요청은 DispatcherServlet의 영역이 된 셈이다.
+서블릿 매핑은 어떤 URL로 들어오는 요청에 대해서 어떠한 서블릿을 실행시킬 것인가에 대한 얘기인데, 이 설정을 web.xml에서 하나하나 하기 보다는 
 
-DispatcherServlet을 web.xml에 설정 한다는 것은 스프링에서 제공하는 **@MVC**를 이용하겠단 뜻이다.
+Spring 프로젝트에서는 web.xml에서 DispatcherServlet의 '<'url-pattern'>'을 ‘/‘로 설정하면 이 서블릿 매핑을 스프링, 즉 DispatcherServlet에게 위임 할 수 있습니다.
 
-여기서 MVC 패턴이란 무엇일까 ?
+또 DispatcherServlet을 web.xml에 설정 한다는 것은 스프링에서 제공하는 **@MVC**를 이용하겠단 뜻이 될 수 있는데,
+
+여기서 MVC 패턴이란 무엇일까요 ?
 
 ###@MVC 패턴
 ---
-MVC란 Model View Controller의 약자로 하나의 어플리케이션을 세가지의 역할로 구분한 개발 방법론이다.
+MVC란 Model View Controller의 약자로 하나의 어플리케이션을 세가지의 역할로 구분한 개발 방법론입니다.
 
-아래의 그림처럼 사용자가 Controller를 조작하면 Controller는 Model을 통해서 데이터를 가져오고 그 정보를 바탕으로 시각적인 표현을 담당하는 View를 제어해서 사용자에게 전달하게 된다.
+아래의 그림처럼 사용자가 Controller를 조작하면 Controller는 Model을 통해서 데이터를 가져오고 그 정보를 바탕으로 시각적인 표현을 담당하는 View를 제어해서 사용자에게 전달하게 됩니다.
 
 <br>
 ![mvc model](/public/MVC.png)
@@ -41,7 +43,7 @@ DispatcherServlet에 대해 간단히 정의해보자면 우리가 각각 분리
 ![dispatcher](/public/spring_dispatcher.png)
 <br>
 
-< UML 스타일의 DispatcherServlet 작동 방식 >
+< UML 스타일 DispatcherServlet 작동 방식 >
 ---
 위의 작업 흐름을 풀어 설명하자면 다음과 같습니다.
 
